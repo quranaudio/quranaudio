@@ -1,0 +1,365 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Rochester&display=swap');
+
+#loader {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    background-color: var(--body_background);
+    z-index: 1000;
+    text-align: center;
+    left: 0;
+    top: 0;
+  }
+#loader .biglogo{
+    margin-top: calc((100vh - 300px) / 2);
+}
+.biglogo img{
+    width: 120px;
+}
+.biglogo .logo_text{
+    font-size: 72px;
+}
+.spin {
+    border: 13px solid var(--bg-color);
+    border-radius: 50%;
+    border-top: 13px solid #269094;
+    border-right: 13px solid transparent;
+    border-bottom: 13px solid transparent;
+    border-left: 13px solid transparent;
+    width: 50px;
+    height: 50px;
+    -webkit-animation: spin 1s linear infinite;
+    animation: spin 1s linear infinite;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.transition{   
+    transition: opacity .5s ease-out; /* It slowly shows the element as we place the mouse on the box and when the time reaches 2 seconds, it is fully visible. */  
+    -webkit-transition: opacity .5s ease-out;  
+    -moz-transition: opacity .5s ease-in-out;   
+    opacity: 0;
+}
+*{
+    margin: 0;
+}
+*::-webkit-scrollbar-track
+ {
+     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+     background-color: #afafaf;
+ }
+ 
+ *::-webkit-scrollbar
+ {
+     width: 12px;
+     background-color: #212025;
+     border-radius: 5px;
+ }
+ 
+ *::-webkit-scrollbar-thumb
+ {
+     border-radius: 5px;
+     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+     background-color: #212025;
+ }
+body{
+    background-color: var(--body_background);
+    font-family: 'Poppins', sans-serif;
+    transition: .5s;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+.logo{
+    float: left;
+    margin: 40px;
+    margin-right: calc(100% - 540px);
+}
+.logo_text{
+    font-family: 'Rochester', cursive;
+    display: inline-block;
+    font-size: 35px;
+    margin-left: 25px;
+    vertical-align: top;
+    margin-top: 23px;
+    color: var(--card_text_color);
+}
+.Hamburger_icon{
+    display: inline-block;
+    font-size: 30px;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 5px;
+    color: white;
+    margin-right: 15px;
+    text-align: center;
+    width: 60px;
+    height: 55px;
+    background: none;
+    border: none;
+    border: 2px solid #2B272F;
+    background-color: #2B272F;
+    padding-top: 5px;
+    padding-left: 2px;
+    float: right;
+    margin: 40px;
+    margin-left: 0;
+    transition: .3s;
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -ms-user-select: none;
+    margin-top: 50px;
+}
+.Hamburger_icon:hover{
+    background-color: #212025;
+    border: 2px solid rgb(66 57 70 / 30%);
+}
+.nightmode_icon{
+    display: inline-block;
+    font-size: 30px;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+    width: 60px;
+    height: 55px;
+    background: none;
+    border: none;
+    border: 2px solid #2B272F;
+    background-color: #2B272F;
+    padding-top: 5px;
+    padding-left: 2px;
+    float: right;
+    margin: 40px;
+    transition: .3s;
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -ms-user-select: none;
+    margin-right: 15px;
+    margin-top: 50px;
+}
+.nightmode_icon:hover{
+    background-color: #212025;
+    border: 2px solid rgb(66 57 70 / 30%);
+}
+.transition{   
+    transition: opacity .5s ease-out; 
+    -webkit-transition: opacity .5s ease-out;  
+    -moz-transition: opacity .5s ease-in-out;   
+    opacity: 0;
+}
+.resp_nav_dropdown{
+    text-align: left;
+    background-color: #2B272F;;
+    position: absolute;
+    right: 40px;
+    padding: 13px 20px;
+    border-radius: .5rem;
+    color: white;
+    display: none;
+    margin-top: 120px;
+    box-shadow: -15px 24px 42px -13px rgb(0 0 0 / 75%);
+    -webkit-box-shadow: -15px 24px 42px -13px rgb(0 0 0 / 75%);
+    -moz-box-shadow: -15px 24px 42px -13px rgba(0,0,0,0.75);
+}
+.resp_nav_dropdown li, .resp_withdropdown {
+    display: block;
+    padding: 13px 30px;
+    font-size: 1.2rem;
+    border: 3px solid transparent;
+    cursor: pointer;
+    margin-bottom: 5px;
+    
+}
+.resp_withdropdown{
+    padding-right: 20px;
+}
+.resp_nav_dropdown .bxstyle{
+    margin-left: 45px;
+}
+.resp_withdropdown_dropdown{
+    margin-top: 15px;
+    display: none;
+}
+.resp_withdropdown_dropdown li{
+    padding: 5px 12px;
+    font-size: 17px;
+}
+.resp_withdropdown_dropdown_active, .resp_withdropdown, .resp_nav_dropdown li{
+    border-radius: .5rem;
+}
+.resp_withdropdown_dropdown_active, .resp_withdropdown:hover, .resp_nav_dropdown li:hover{
+    transition: .3s;
+    background-color: #269094;
+    color: white;
+}
+.withdropdown{
+    padding-right: 15px !important;
+}
+.rotate{
+    transform: rotate(180deg);
+}
+.bxstyle{
+    font-size: 25px;
+    vertical-align: middle;
+    margin-left: 5px;
+    transition: .5s;
+}
+.filter{
+    text-align: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    color: white;
+    overflow-x: hidden;
+}
+.baby_cards{
+    width: 43%;
+    border-radius: 5px;
+    max-width: 800px;
+    background-color: var(--card_background);
+    display: inline-block;
+    padding: 20px;
+    margin-bottom: 25px;
+    margin-right: 20px;
+    transition: .5s;
+    color: var(--card_text_color);
+}
+.con{
+    max-width: 1200px;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 60px;
+    padding-bottom: 35px;
+    text-align: initial;
+    padding: 40px;
+    display: inline-block;
+}
+.letter{
+    display: inline-block;
+    margin-top: 45px;
+    margin-bottom: 25px;
+    font-weight: bold;
+    font-size: 25px;
+    margin-right: 25px;
+    vertical-align: top;
+    color: var(--card_text_color);
+}
+.pic{
+    width: 80px;
+    height: 80px;
+    border-radius: 5px;
+    display: inline-block;
+    float: left;
+}
+.pic img{
+    border-radius: 5px;
+    object-position: top;
+}
+.surah_name{
+    font-size: 1.2rem;
+    display: inline-block;
+    margin-left: 25px;
+    margin-top: 25px;
+    width: 350px;
+}
+.baby_cards:hover {
+    background-color: #269094 !important;
+    color: white !important;
+    cursor: pointer;
+}
+
+.hero_right_con{
+    display: inline-block;
+}
+.hero_title {
+    font-size: 52px;
+    padding-top: 80px;
+    font-weight: bold;
+    color: var(--card_text_color);
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.hero_text {
+    margin-top: 1px;
+    font-size: 21px;
+    font-weight: lighter;
+    color: var(--small_title_color);
+    padding-bottom: 100px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.donate{
+    background-color: #269094;
+    color: white;
+}
+.donate:hover{
+    background-color: #20777a !important;
+    color: white;
+}
+.active{
+    background-color: #269094 !important;
+    border: 2px solid #269094 !important;
+    color: white;
+}
+@media screen and (max-width: 1323px) {
+    .baby_cards {
+        width: calc(100% - 50px);
+        display: flow-root;
+        margin-bottom: 25px;
+        margin: 0 auto;
+        margin-bottom: 25px;
+        margin-right: 25px;
+    }
+    .letter{
+        margin-left: 25px;
+    }
+}
+@media screen and (max-width: 800px) {
+    .letter{
+        display: block;
+    }
+    .surah_name{
+        width: 250px;
+    }
+}
+@media screen and (max-width: 569px) {
+    .baby_cards {
+        text-align: center;
+    }
+    .pic{
+        float: none;
+    }
+    .surah_name{
+        width: 80%;
+        margin-left: auto;
+    }
+    .hero_tex{
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+    .logo_text{
+        display: none;
+    }
+}

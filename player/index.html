@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <script src="//unpkg.com/darken"></script>
+    <link rel="shortcut icon" href="assets/img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <title>Quranaudio</title>
+</head>
+<body>
+    <div class="con1">
+        <div class="hero">
+            <div class="filter">
+                <div style="max-width:2500px; margin:0 auto">
+                    <a href="../index.html">
+                        <div class="logo">
+                            <img src="assets/img/logo.png" alt="" srcset="">
+                            <div class="logo_text">Quran audio</div>
+                        </div>
+                    </a>
+                    <div class='Hamburger_icon'><i class='bx bx-menu'></i></div> 
+                    <div class='nightmode_icon' id="nightmode_icon"><i class='bx bxs-moon'></i></div> 
+                    <div class="resp_nav_dropdown">
+                        <a href="../about_me/"><li>About</li></a>
+                        <a href="../contact_me/"><li>Contact</li></a>
+                        <a href="../media/"><li>Media</li></a>
+                        <ul class='resp_withdropdown'>Other Projects <i class='bx bx-chevron-down bxstyle'></i>
+                            <div class="resp_withdropdown_dropdown">
+                                <li>Coming Soon!</li>
+                            </div>
+                        </ul>
+                        <a href="https://www.paypal.com/donate/?hosted_button_id=5RM5URAKD4ES4"><li class="donate">Donate</li></a>
+                    </div>
+                    <div class="shiekh_info_con">
+                        <div class="shiekh_picture_hero" id="shiekh_picture_hero"><img src="../shiekh_pictures/place_holder.png" alt="" srcset=""></div>
+                        <div class="hero_right_con">
+                            <div class="hero_title" id='hero_title'>Placeholder</div>
+                            <div class="hero_text" id='hero_text'>Listen, loop and shuffle through all the chapters of the Quran.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="con2">
+        <div style="max-width:2500px; margin:0 auto">
+            <div class="surah_card">
+                <div class="surah_card_play" ><i class='bx bx-play'></i></div>
+                <div class="surah_number">001</div>
+                <div class="surah_name">Surah Alfatiha</div>
+                <div class="surah_share" onclick="share('001')"><i class='bx bx-share-alt'></i></div>
+                <div class="surah_download" onclick="download('001')"><i class='bx bx-cloud-download'></i></div>
+            </div>
+            <div class="surah_card">
+                <div class="surah_card_play"><i class='bx bx-play'></i></div>
+                <div class="surah_number">002</div>
+                <div class="surah_name">Surah Al-Baqarah</div>
+                <div class="surah_share" onclick="share('002')"><i class='bx bx-share-alt'></i></div>
+                <div class="surah_download" onclick="download('002')"><i class='bx bx-cloud-download' ></i></div>
+            </div>
+            <div class="surah_card">
+                <div class="surah_card_play"><i class='bx bx-play'></i></div>
+                <div class="surah_number">003</div>
+                <div class="surah_name">Surah Ali 'Imran</div>
+                <div class="surah_share" onclick="share('003')"><i class='bx bx-share-alt'></i></div>
+                <div class="surah_download" onclick="download('003')"><i class='bx bx-cloud-download' ></i></div>
+            </div>
+            <div class="surah_card">
+                <div class="surah_card_play"><i class='bx bx-play'></i></div>
+                <div class="surah_number">004</div>
+                <div class="surah_name">Surah An-Nisa</div>
+                <div class="surah_share" onclick="share('004')"><i class='bx bx-share-alt'></i></div>
+                <div class="surah_download" onclick="download('004')"><i class='bx bx-cloud-download' ></i></div>
+            </div>
+            <div class="surah_card">
+                <div class="surah_card_play"><i class='bx bx-play'></i></div>
+                <div class="surah_number">005</div>
+                <div class="surah_name">Surah Al-Ma'idah</div>
+                <div class="surah_share" onclick="share('005')"><i class='bx bx-share-alt'></i></div>
+                <div class="surah_download" onclick="download('005')"><i class='bx bx-cloud-download' ></i></div>
+            </div>
+            <div class="surah_card">
+                <div class="surah_card_play"><i class='bx bx-play'></i></div>
+                <div class="surah_number">006</div>
+                <div class="surah_name">Surah Al-An'am</div>
+                <div class="surah_share" onclick="share('006')"><i class='bx bx-share-alt'></i></div>
+                <div class="surah_download" onclick="download('006')"><i class='bx bx-cloud-download' ></i></div>
+            </div>
+            <div class="surah_card">
+                <div class="surah_card_play"><i class='bx bx-play'></i></div>
+                <div class="surah_number">007</div>
+                <div class="surah_name">Surah Al-A'raf</div>
+                <div class="surah_share" onclick="share('007')"><i class='bx bx-share-alt'></i></div>
+                <div class="surah_download" onclick="download('007')"><i class='bx bx-cloud-download' ></i></div>
+            </div>
+            <div class="surah_card">
+                <div class="surah_card_play"><i class='bx bx-play'></i></div>
+                <div class="surah_number">008</div>
+                <div class="surah_name">Surah Al-Anfal</div>
+                <div class="surah_share" onclick="share('008')"><i class='bx bx-share-alt'></i></div>
+                <div class="surah_download" onclick="download('008')"><i class='bx bx-cloud-download' ></i></div>
+            </div>
+            <div class="surah_card">
+                <div class="surah_card_play"><i class='bx bx-play'></i></div>
+                <div class="surah_number">009</div>
+                <div class="surah_name">Surah At-Tawbah</div>
+                <div class="surah_share" onclick="share('009')"><i class='bx bx-share-alt'></i></div>
+                <div class="surah_download" onclick="download('009')"><i class='bx bx-cloud-download' ></i></div>
+            </div>
+            <div class="surah_card">
+                <div class="surah_card_play"><i class='bx bx-play'></i></div>
+                <div class="surah_number">010</div>
+                <div class="surah_name">Surah Yunus</div>
+                <div class="surah_share" onclick="share('010')"><i class='bx bx-share-alt'></i></div>
+                <div class="surah_download" onclick="download('010')"><i class='bx bx-cloud-download' ></i></div>
+            </div>
+            <div class="surah_card">
+                <div class="surah_card_play" ><i class='bx bx-play'></i></div>
+                <div class="surah_number">011</div>
+                <div class="surah_name">Surah Hud</div>
+                <div class="surah_share" onclick="share('011')"><i class='bx bx-share-alt'></i></div>
+                <div class="surah_download" onclick="download('011')"><i class='bx bx-cloud-download'></i></div>
+            </div>
+            <div class="surah_card">
+                <div class="surah_card_play" ><i class='bx bx-play'></i></div>
+                <div class="surah_number">012</div>
+                <div class="surah_name">Surah Yusuf</div>
+                <div class="surah_share" onclick="share('012')"><i class='bx bx-share-alt'></i></div>
+                <div class="surah_download" onclick="download('012')"><i class='bx bx-cloud-download'></i></div>
+            </div>
+            <div class="surah_card">
+                <div class="surah_card_play" ><i class='bx bx-play'></i></div>
+                <div class="surah_number">013</div>
+                <div class="surah_name">Surah Ar-Ra'd</div>
+                <div class="surah_share" onclick="share('013')"><i class='bx bx-share-alt'></i></div>
+                <div class="surah_download" onclick="download('013')"><i class='bx bx-cloud-download'></i></div>
+            </div>
+            <div class="surah_card">
+                <div class="surah_card_play" ><i class='bx bx-play'></i></div>
+                <div class="surah_number">014</div>
+                <div class="surah_name">Surah Ibrahim</div>
+                <div class="surah_share" onclick="share('014')"><i class='bx bx-share-alt'></i></div>
+                <div class="surah_download" onclick="download('014')"><i class='bx bx-cloud-download'></i></div>
+            </div>
+            <div class="surah_card">
+                <div class="surah_card_play" ><i class='bx bx-play'></i></div>
+                <div class="surah_number">015</div>
+                <div class="surah_name">Surah Al-Hijr</div>
+                <div class="surah_share" onclick="share('015')"><i class='bx bx-share-alt'></i></div>
+                <div class="surah_download" onclick="download('015')"><i class='bx bx-cloud-download'></i></div>
+            </div>
+            <div class="surah_card">
+                <div class="surah_card_play" ><i class='bx bx-play'></i></div>
+                <div class="surah_number">016</div>
+                <div class="surah_name">Surah An-Nahl</div>
+                <div class="surah_share" onclick="share('016')"><i class='bx bx-share-alt'></i></div>
+                <div class="surah_download" onclick="download('016')"><i class='bx bx-cloud-download'></i></div>
+            </div>
+            <div class="surah_card">
+                <div class="surah_card_play" ><i class='bx bx-play'></i></div>
+                <div class="surah_number">017</div>
+                <div class="surah_name">Surah Al-Isra</div>
+                <div class="surah_share" onclick="share('017')"><i class='bx bx-share-alt'></i></div>
+                <div class="surah_download" onclick="download('017')"><i class='bx bx-cloud-download'></i></div>
+            </div>
+            <div class="surah_card">
+                <div class="surah_card_play" ><i class='bx bx-play'></i></div>
+                <div class="surah_number">018</div>
+                <div class="surah_name">Surah Al-Kahf</div>
+                <div class="surah_share" onclick="share('018')"><i class='bx bx-share-alt'></i></div>
+                <div class="surah_download" onclick="download('018')"><i class='bx bx-cloud-download'></i></div>
+            </div>
+            <div class="surah_card">
+                <div class="surah_card_play" ><i class='bx bx-play'></i></div>
+                <div class="surah_number">019</div>
+                <div class="surah_name">Surah Maryam</div>
+                <div class="surah_share" onclick="share('019')"><i class='bx bx-share-alt'></i></div>
+                <div class="surah_download" onclick="download('019')"><i class='bx bx-cloud-download'></i></div>
+            </div>
+            <div class="surah_card">
+                <div class="surah_card_play" ><i class='bx bx-play'></i></div>
+                <div class="surah_number">020</div>
+                <div class="surah_name">Surah Taha</div>
+                <div class="surah_share" onclick="share('020')"><i class='bx bx-share-alt'></i></div>
+                <div class="surah_download" onclick="download('020')"><i class='bx bx-cloud-download'></i></div>
+            </div>
+            <div class="surah_card">
+                <div class="surah_card_play" ><i class='bx bx-play'></i></div>
+                <div class="surah_number">021</div>
+                <div class="surah_name">Surah Al-Anbya</div>
+                <div class="surah_share" onclick="share('021')"><i class='bx bx-share-alt'></i></div>
+                <div class="surah_download" onclick="download('021')"><i class='bx bx-cloud-download'></i></div>
+            </div>
+            <div class="surah_card">
+                <div class="surah_card_play" ><i class='bx bx-play'></i></div>
+                <div class="surah_number">022</div>
+                <div class="surah_name">Surah Al-Haj</div>
+                <div class="surah_share" onclick="share('022')"><i class='bx bx-share-alt'></i></div>
+                <div class="surah_download" onclick="download('022')"><i class='bx bx-cloud-download'></i></div>
+            </div>
+            <div class="surah_card">
+                <div class="surah_card_play" ><i class='bx bx-play'></i></div>
+                <div class="surah_number">023</div>
+                <div class="surah_name">Surah Al-Mu'minun</div>
+                <div class="surah_share" onclick="share('023')"><i class='bx bx-share-alt'></i></div>
+                <div class="surah_download" onclick="download('023')"><i class='bx bx-cloud-download'></i></div>
+            </div>
+            <div class="surah_card">
+                <div class="surah_card_play" ><i class='bx bx-play'></i></div>
+                <div class="surah_number">024</div>
+                <div class="surah_name">Surah An-Nur</div>
+                <div class="surah_share" onclick="share('024')"><i class='bx bx-share-alt'></i></div>
+                <div class="surah_download" onclick="download('024')"><i class='bx bx-cloud-download'></i></div>
+            </div>
+            <div class="surah_card">
+                <div class="surah_card_play" ><i class='bx bx-play'></i></div>
+                <div class="surah_number">025</div>
+                <div class="surah_name">Surah Al-Furqan</div>
+                <div class="surah_share" onclick="share('025')"><i class='bx bx-share-alt'></i></div>
+                <div class="surah_download" onclick="download('025')"><i class='bx bx-cloud-download'></i></div>
+            </div>
+            <div class="surah_card">
+                <div class="surah_card_play" ><i class='bx bx-play'></i></div>
+                <div class="surah_number">026</div>
+                <div class="surah_name">Surah Ash-Shu'ara</div>
+                <div class="surah_share" onclick="share('026')"><i class='bx bx-share-alt'></i></div>
+                <div class="surah_download" onclick="download('026')"><i class='bx bx-cloud-download'></i></div>
+            </div>
+            <div class="surah_card">
+                <div class="surah_card_play" ><i class='bx bx-play'></i></div>
+                <div class="surah_number">027</div>
+                <div class="surah_name">Surah An-Naml</div>
+                <div class="surah_share" onclick="share('027')"><i class='bx bx-share-alt'></i></div>
+                <div class="surah_download" onclick="download('027')"><i class='bx bx-cloud-download'></i></div>
+            </div>
+            <div class="surah_card">
+                <div class="surah_card_play" ><i class='bx bx-play'></i></div>
+                <div class="surah_number">028</div>
+                <div class="surah_name">Surah Al-Qasas</div>
+                <div class="surah_share" onclick="share('028')"><i class='bx bx-share-alt'></i></div>
+                <div class="surah_download" onclick="download('028')"><i class='bx bx-cloud-download'></i></div>
+            </div>
+            <div class="surah_card">
+                <div class="surah_card_play" ><i class='bx bx-play'></i></div>
+                <div class="surah_number">029</div>
+                <div class="surah_name">Surah Al-'Ankabut</div>
+                <div class="surah_share" onclick="share('029')"><i class='bx bx-share-alt'></i></div>
+                <div class="surah_download" onclick="download('029')"><i class='bx bx-cloud-download'></i></div>
+            </div>
+            <div class="surah_card">
+                <div class="surah_card_play" ><i class='bx bx-play'></i></div>
+                <div class="surah_number">030</div>
+                <div class="surah_name">Surah Ar-Rum</div>
+                <div class="surah_share" onclick="share('030')"><i class='bx bx-share-alt'></i></div>
+                <div class="surah_download" onclick="download('030')"><i class='bx bx-cloud-download'></i></div>
+            </div>
+            <div class="surah_card">
+                <div class="surah_card_play" ><i class='bx bx-play'></i></div>
+                <div class="surah_number">031</div>
+                <div class="surah_name">Surah Luqman</div>
+                <div class="surah_share" onclick="share('031')"><i class='bx bx-share-alt'></i></div>
+                <div class="surah_download" onclick="download('031')"><i class='bx bx-cloud-download'></i></div>
+            </div>
+            <div class="surah_card">
+                <div class="surah_card_play" ><i class='bx bx-play'></i></div>
+                <div class="surah_number">032</div>
+                <div class="surah_name">Surah As-Sajdah</div>
+                <div class="surah_share" onclick="share('032')"><i class='bx bx-share-alt'></i></div>
+                <div class="surah_download" onclick="download('032')"><i class='bx bx-cloud-download'></i></div>
+            </div>
+            <div class="surah_card">
+                <div class="surah_card_play" ><i class='bx bx-play'></i></div>
+                <div class="surah_number">033</div>
+                <div class="surah_name">Surah Al-Ahzab</div>
+                <div class="surah_share" onclick="share('033')"><i class='bx bx-share-alt'></i></div>
+                <div class="surah_download" onclick="download('033')"><i class='bx bx-cloud-download'></i></div>
+            </div>
+            <div class="surah_card">
+                <div class="surah_card_play" ><i class='bx bx-play'></i></div>
+                <div class="surah_number">034</div>
+                <div class="surah_name">Surah Saba</div>
+                <div class="surah_share" onclick="share('034')"><i class='bx bx-share-alt'></i></div>
+                <div class="surah_download" onclick="download('034')"><i class='bx bx-cloud-download'></i></div>
+            </div>
+            <div class="surah_card">
+                <div class="surah_card_play" ><i class='bx bx-play'></i></div>
+                <div class="surah_number">035</div>
+                <div class="surah_name">Surah Fatir</div>
+                <div class="surah_share" onclick="share('035')"><i class='bx bx-share-alt'></i></div>
+                <div class="surah_download" onclick="download('035')"><i class='bx bx-cloud-download'></i></div>
+            </div>
+            <div class="surah_card">
+                <div class="surah_card_play" ><i class='bx bx-play'></i></div>
+                <div class="surah_number">036</div>
+                <div class="surah_name">Surah Ya-Sin</div>
+                <div class="surah_share" onclick="share('036')"><i class='bx bx-share-alt'></i></div>
+                <div class="surah_download" onclick="download('036')"><i class='bx bx-cloud-download'></i></div>
+            </div>
+            <div class="surah_card">
+                <div class="surah_card_play" ><i class='bx bx-play'></i></div>
+                <div class="surah_number">037</div>
+                <div class="surah_name">Surah As-Saffat</div>
+                <div class="surah_share" onclick="share('037')"><i class='bx bx-share-alt'></i></div>
+                <div class="surah_download" onclick="download('037')"><i class='bx bx-cloud-download'></i></div>
+            </div>
+            <div class="surah_card">
+                <div class="surah_card_play" ><i class='bx bx-play'></i></div>
+                <div class="surah_number">038</div>
+                <div class="surah_name">Surah Sad</div>
+                <div class="surah_share" onclick="share('038')"><i class='bx bx-share-alt'></i></div>
+                <div class="surah_download" onclick="download('038')"><i class='bx bx-cloud-download'></i></div>
+            </div>
+            <div class="surah_card">
+                <div class="surah_card_play" ><i class='bx bx-play'></i></div>
+                <div class="surah_number">039</div>
+                <div class="surah_name">Surah Az-Zumar</div>
+                <div class="surah_share" onclick="share('039')"><i class='bx bx-share-alt'></i></div>
+                <div class="surah_download" onclick="download('039')"><i class='bx bx-cloud-download'></i></div>
+            </div>
+            <div class="surah_card">
+                <div class="surah_card_play" ><i class='bx bx-play'></i></div>
+                <div class="surah_number">040</div>
+                <div class="surah_name">Surah Ghafir</div>
+                <div class="surah_share" onclick="share('040')"><i class='bx bx-share-alt'></i></div>
+                <div class="surah_download" onclick="download('040')"><i class='bx bx-cloud-download'></i></div>
+            </div>
+            <div class="surah_card">
+                <div class="surah_card_play" ><i class='bx bx-play'></i></div>
+                <div class="surah_number">041</div>
+                <div class="surah_name">Surah Fussilat</div>
+                <div class="surah_share" onclick="share('041')"><i class='bx bx-share-alt'></i></div>
+                <div class="surah_download" onclick="download('041')"><i class='bx bx-cloud-download'></i></div>
+            </div>
+            <div class="surah_card">
+                <div class="surah_card_play" ><i class='bx bx-play'></i></div>
+                <div class="surah_number">042</div>
+                <div class="surah_name">Surah Ash-Shuraa</div>
+                <div class="surah_share" onclick="share('042')"><i class='bx bx-share-alt'></i></div>
+                <div class="surah_download" onclick="download('042')"><i class='bx bx-cloud-download'></i></div>
+            </div>
+            <div class="surah_card">
+                <div class="surah_card_play" ><i class='bx bx-play'></i></div>
+                <div class="surah_number">043</div>
+                <div class="surah_name">Surah Az-Zukhruf</div>
+                <div class="surah_share" onclick="share('043')"><i class='bx bx-share-alt'></i></div>
+                <div class="surah_download" onclick="download('043')"><i class='bx bx-cloud-download'></i></div>
+            </div>
+            <div class="surah_card">
+                <div class="surah_card_play" ><i class='bx bx-play'></i></div>
+                <div class="surah_number">044</div>
+                <div class="surah_name">Surah Ad-Dukhan</div>
+                <div class="surah_share" onclick="share('044')"><i class='bx bx-share-alt'></i></div>
+                <div class="surah_download" onclick="download('044')"><i class='bx bx-cloud-download'></i></div>
+            </div>
+            <div class="surah_card">
+                <div class="surah_card_play" ><i class='bx bx-play'></i></div>
+                <div class="surah_number">045</div>
+                <div class="surah_name">Surah Al-Jathiyah</div>
+                <div class="surah_share" onclick="share('045')"><i class='bx bx-share-alt'></i></div>
+                <div class="surah_download" onclick="download('045')"><i class='bx bx-cloud-download'></i></div>
+            </div>
+            <div class="surah_card">
+                <div class="surah_card_play" ><i class='bx bx-play'></i></div>
+                <div class="surah_number">046</div>
+                <div class="surah_name">Surah Al-Ahqaf</div>
+                <div class="surah_share" onclick="share('046')"><i class='bx bx-share-alt'></i></div>
+                <div class="surah_download" onclick="download('046')"><i class='bx bx-cloud-download'></i></div>
+            </div>
+            <div class="surah_card">
+                <div class="surah_card_play" ><i class='bx bx-play'></i></div>
+                <div class="surah_number">047</div>
+                <div class="surah_name">Surah Muhammad</div>
+                <div class="surah_share" onclick="share('047')"><i class='bx bx-share-alt'></i></div>
+                <div class="surah_download" onclick="download('047')"><i class='bx bx-cloud-download'></i></div>
+            </div>
+            <div class="surah_card">
+                <div class="surah_card_play" ><i class='bx bx-play'></i></div>
+                <div class="surah_number">048</div>
+                <div class="surah_name">Surah Al-Fath</div>
+                <div class="surah_share" onclick="share('048')"><i class='bx bx-share-alt'></i></div>
+                <div class="surah_download" onclick="download('048')"><i class='bx bx-cloud-download'></i></div>
+            </div>
+            <div class="surah_card">
+                <div class="surah_card_play" ><i class='bx bx-play'></i></div>
+                <div class="surah_number">049</div>
+                <div class="surah_name">Surah Al-Hujurat</div>
+                <div class="surah_share" onclick="share('049')"><i class='bx bx-share-alt'></i></div>
+                <div class="surah_download" onclick="download('049')"><i class='bx bx-cloud-download'></i></div>
+            </div>
+            <div class="surah_card">
+                <div class="surah_card_play" ><i class='bx bx-play'></i></div>
+                <div class="surah_number">050</div>
+                <div class="surah_name">Surah Qaf</div>
+                <div class="surah_share" onclick="share('050')"><i class='bx bx-share-alt'></i></div>
+                <div class="surah_download" onclick="download('050')"><i class='bx bx-cloud-download'></i></div>
+            </div>
+            <div class="surah_card">
+                <div class="surah_card_play" ><i class='bx bx-play'></i></div>
+                <div class="surah_number">051</div>
+                <div class="surah_name">Surah Adh-Dhariyat</div>
+                <div class="surah_share" onclick="share('051')"><i class='bx bx-share-alt'></i></div>
+                <div class="surah_download" onclick="download('051')"><i class='bx bx-cloud-download'></i></div>
+            </div>
+            <div class="surah_card">
+                <div class="surah_card_play" ><i class='bx bx-play'></i></div>
+                <div class="surah_number">052</div>
+                <div class="surah_name">Surah At-Tur</div>
+                <div class="surah_share" onclick="share('052')"><i class='bx bx-share-alt'></i></div>
+                <div class="surah_download" onclick="download('052')"><i class='bx bx-cloud-download'></i></div>
+            </div>
+            <div class="surah_card">
+                <div class="surah_card_play" ><i class='bx bx-play'></i></div>
+                <div class="surah_number">053</div>
+                <div class="surah_name">Surah An-Najm</div>
+                <div class="surah_share" onclick="share('053')"><i class='bx bx-share-alt'></i></div>
+                <div class="surah_download" onclick="download('053')"><i class='bx bx-cloud-download'></i></div>
+            </div>
+            <div class="surah_card">
+                <div class="surah_card_play" ><i class='bx bx-play'></i></div>
+                <div class="surah_number">054</div>
+                <div class="surah_name">Surah Al-Qamar</div>
+                <div class="surah_share" onclick="share('054')"><i class='bx bx-share-alt'></i></div>
+                <div class="surah_download" onclick="download('054')"><i class='bx bx-cloud-download'></i></div>
+            </div>
+            <div class="surah_card">
+                <div class="surah_card_play" ><i class='bx bx-play'></i></div>
+                <div class="surah_number">055</div>
+                <div class="surah_name">Surah Ar-Rahman</div>
+                <div class="surah_share" onclick="share('055')"><i class='bx bx-share-alt'></i></div>
+                <div class="surah_download" onclick="download('055')"><i class='bx bx-cloud-download'></i></div>
+            </div>
+            <div class="surah_card">
+                <div class="surah_card_play" ><i class='bx bx-play'></i></div>
+                <div class="surah_number">056</div>
+                <div class="surah_name">Surah Al-Waqi'ah</div>
+                <div class="surah_share" onclick="share('056')"><i class='bx bx-share-alt'></i></div>
+                <div class="surah_download" onclick="download('056')"><i class='bx bx-cloud-download'></i></div>
+            </div>
+            <div class="surah_card">
+                <div class="surah_card_play" ><i class='bx bx-play'></i></div>
+                <div class="surah_number">057</div>
+                <div class="surah_name">Surah Al-Hadid</div>
+                <div class="surah_share" onclick="share('057')"><i class='bx bx-share-alt'></i></div>
+                <div class="surah_download" onclick="download('057')"><i class='bx bx-cloud-download'></i></div>
+            </div>
+            <div class="surah_card">
+                <div class="surah_card_play" ><i class='bx bx-play'></i></div>
+                <div class="surah_number">058</div>
+                <div class="surah_name">Surah Al-Mujadila</div>
+                <div class="surah_share" onclick="share('058')"><i class='bx bx-share-alt'></i></div>
+                <div class="surah_download" onclick="download('058')"><i class='bx bx-cloud-download'></i></div>
+            </div>
+            <div class="surah_card">
+                <div class="surah_card_play" ><i class='bx bx-play'></i></div>
+                <div class="surah_number">059</div>
+                <div class="surah_name">Surah Al-Hashr</div>
+                <div class="surah_share" onclick="share('059')"><i class='bx bx-share-alt'></i></div>
+                <div class="surah_download" onclick="download('059')"><i class='bx bx-cloud-download'></i></div>
+            </div>
+            <div class="surah_card">
+                <div class="surah_card_play" ><i class='bx bx-play'></i></div>
+                <div class="surah_number">060</div>
+                <div class="surah_name">Surah Al-Mumtahanah</div>
+                <div class="surah_share" onclick="share('060')"><i class='bx bx-share-alt'></i></div>
+                <div class="surah_download" onclick="download('060')"><i class='bx bx-cloud-download'></i></div>
+            </div>
+            <div class="surah_card">
+                <div class="surah_card_play" ><i class='bx bx-play'></i></div>
+                <div class="surah_number">061</div>
+                <div class="surah_name">Surah As-Saf</div>
+                <div class="surah_share" onclick="share('061')"><i class='bx bx-share-alt'></i></div>
+                <div class="surah_download" onclick="download('061')"><i class='bx bx-cloud-download'></i></div>
+            </div>
+            <div class="surah_card">
+                <div class="surah_card_play" ><i class='bx bx-play'></i></div>
+                <div class="surah_number">062</div>
+                <div class="surah_name">Surah Al-Jumu'ah</div>
+                <div class="surah_share" onclick="share('062')"><i class='bx bx-share-alt'></i></div>
+                <div class="surah_download" onclick="download('062')"><i class='bx bx-cloud-download'></i></div>
+            </div>
+            <div class="surah_card">
+                <div class="surah_card_play" ><i class='bx bx-play'></i></div>
+                <div class="surah_number">063</div>
+                <div class="surah_name">Surah Al-Munafiqun</div>
+                <div class="surah_share" onclick="share('063')"><i class='bx bx-share-alt'></i></div>
+                <div class="surah_download" onclick="download('063')"><i class='bx bx-cloud-download'></i></div>
+            </div>
+            <div class="surah_card">
+                <div class="surah_card_play" ><i class='bx bx-play'></i></div>
+                <div class="surah_number">064</div>
+                <div class="surah_name">Surah At-Taghabun</div>
+                <div class="surah_share" onclick="share('064')"><i class='bx bx-share-alt'></i></div>
+                <div class="surah_download" onclick="download('064')"><i class='bx bx-cloud-download'></i></div>
+            </div>
+            <div class="surah_card">
+                <div class="surah_card_play" ><i class='bx bx-play'></i></div>
+                <div class="surah_number">065</div>
+                <div class="surah_name">Surah At-Talaq</div>
+                <div class="surah_share" onclick="share('065')"><i class='bx bx-share-alt'></i></div>
+                <div class="surah_download" onclick="download('065')"><i class='bx bx-cloud-download'></i></div>
+            </div>
+            <div class="surah_card">
+                <div class="surah_card_play" ><i class='bx bx-play'></i></div>
+                <div class="surah_number">066</div>
+                <div class="surah_name">Surah At-Tahrim</div>
+                <div class="surah_share" onclick="share('066')"><i class='bx bx-share-alt'></i></div>
+                <div class="surah_download" onclick="download('066')"><i class='bx bx-cloud-download'></i></div>
+            </div>
+            <div class="surah_card">
+                <div class="surah_card_play" ><i class='bx bx-play'></i></div>
+                <div class="surah_number">067</div>
+                <div class="surah_name">Surah Al-Mulk</div>
+                <div class="surah_share" onclick="share('067')"><i class='bx bx-share-alt'></i></div>
+                <div class="surah_download" onclick="download('067')"><i class='bx bx-cloud-download'></i></div>
+            </div>
+            <div class="surah_card">
+                <div class="surah_card_play" ><i class='bx bx-play'></i></div>
+                <div class="surah_number">068</div>
+                <div class="surah_name">Surah Al-Qalam</div>
+                <div class="surah_share" onclick="share('068')"><i class='bx bx-share-alt'></i></div>
+                <div class="surah_download" onclick="download('068')"><i class='bx bx-cloud-download'></i></div>
+            </div>
+            <div class="surah_card">
+                <div class="surah_card_play" ><i class='bx bx-play'></i></div>
+                <div class="surah_number">069</div>
+                <div class="surah_name">Surah Al-Haqqah</div>
+                <div class="surah_share" onclick="share('069')"><i class='bx bx-share-alt'></i></div>
+                <div class="surah_download" onclick="download('069')"><i class='bx bx-cloud-download'></i></div>
+            </div>
+            <div class="surah_card">
+                <div class="surah_card_play" ><i class='bx bx-play'></i></div>
+                <div class="surah_number">070</div>
+                <div class="surah_name">Surah Al-Ma'arij</div>
+                <div class="surah_share" onclick="share('070')"><i class='bx bx-share-alt'></i></div>
+                <div class="surah_download" onclick="download('070')"><i class='bx bx-cloud-download'></i></div>
+            </div>
+            <div class="surah_card">
+                <div class="surah_card_play" ><i class='bx bx-play'></i></div>
+                <div class="surah_number">071</div>
+                <div class="surah_name">Surah Nuh</div>
+                <div class="surah_share" onclick="share('071')"><i class='bx bx-share-alt'></i></div>
+                <div class="surah_download" onclick="download('071')"><i class='bx bx-cloud-download'></i></div>
+            </div>
+            <div class="surah_card">
+                <div class="surah_card_play" ><i class='bx bx-play'></i></div>
+                <div class="surah_number">072</div>
+                <div class="surah_name">Surah Al-Jinn</div>
+                <div class="surah_share" onclick="share('072')"><i class='bx bx-share-alt'></i></div>
+                <div class="surah_download" onclick="download('072')"><i class='bx bx-cloud-download'></i></div>
+            </div>
+            <div class="surah_card">
+                <div class="surah_card_play" ><i class='bx bx-play'></i></div>
+                <div class="surah_number">073</div>
+                <div class="surah_name">Surah Al-Muzzammil</div>
+                <div class="surah_share" onclick="share('073')"><i class='bx bx-share-alt'></i></div>
+                <div class="surah_download" onclick="download('073')"><i class='bx bx-cloud-download'></i></div>
+            </div>
+            <div class="surah_card">
+                <div class="surah_card_play" ><i class='bx bx-play'></i></div>
+                <div class="surah_number">074</div>
+                <div class="surah_name">Surah Al-Muddaththir</div>
+                <div class="surah_share" onclick="share('074')"><i class='bx bx-share-alt'></i></div>
+                <div class="surah_download" onclick="download('074')"><i class='bx bx-cloud-download'></i></div>
+            </div>
+            <div class="surah_card">
+                <div class="surah_card_play" ><i class='bx bx-play'></i></div>
+                <div class="surah_number">075</div>
+                <div class="surah_name">Surah Al-Qiyamah</div>
+                <div class="surah_share" onclick="share('075')"><i class='bx bx-share-alt'></i></div>
+                <div class="surah_download" onclick="download('075')"><i class='bx bx-cloud-download'></i></div>
+            </div>
+            <div class="surah_card">
+                <div class="surah_card_play" ><i class='bx bx-play'></i></div>
+                <div class="surah_number">076</div>
+                <div class="surah_name">Surah Al-Insan</div>
+                <div class="surah_share" onclick="share('076')"><i class='bx bx-share-alt'></i></div>
+                <div class="surah_download" onclick="download('076')"><i class='bx bx-cloud-download'></i></div>
+            </div>
+            <div class="surah_card">
+                <div class="surah_card_play" ><i class='bx bx-play'></i></div>
+                <div class="surah_number">077</div>
+                <div class="surah_name">Surah Al-Mursalat</div>
+                <div class="surah_share" onclick="share('077')"><i class='bx bx-share-alt'></i></div>
+                <div class="surah_download" onclick="download('077')"><i class='bx bx-cloud-download'></i></div>
+            </div>
+            <div class="surah_card">
+                <div class="surah_card_play" ><i class='bx bx-play'></i></div>
+                <div class="surah_number">078</div>
+                <div class="surah_name">Surah An-Naba</div>
+                <div class="surah_share" onclick="share('078')"><i class='bx bx-share-alt'></i></div>
+                <div class="surah_download" onclick="download('078')"><i class='bx bx-cloud-download'></i></div>
+            </div>
+            <div class="surah_card">
+                <div class="surah_card_play" ><i class='bx bx-play'></i></div>
+                <div class="surah_number">079</div>
+                <div class="surah_name">Surah An-Nazi'at</div>
+                <div class="surah_share" onclick="share('079')"><i class='bx bx-share-alt'></i></div>
+                <div class="surah_download" onclick="download('079')"><i class='bx bx-cloud-download'></i></div>
+            </div>
+            <div class="surah_card">
+                <div class="surah_card_play" ><i class='bx bx-play'></i></div>
+                <div class="surah_number">080</div>
+                <div class="surah_name">Surah 'Abasa</div>
+                <div class="surah_share" onclick="share('080')"><i class='bx bx-share-alt'></i></div>
+                <div class="surah_download" onclick="download('080')"><i class='bx bx-cloud-download'></i></div>
+            </div>
+            <div class="surah_card">
+                <div class="surah_card_play" ><i class='bx bx-play'></i></div>
+                <div class="surah_number">081</div>
+                <div class="surah_name">Surah At-Takwir</div>
+                <div class="surah_share" onclick="share('081')"><i class='bx bx-share-alt'></i></div>
+                <div class="surah_download" onclick="download('081')"><i class='bx bx-cloud-download'></i></div>
+            </div>
+            <div class="surah_card">
+                <div class="surah_card_play" ><i class='bx bx-play'></i></div>
+                <div class="surah_number">082</div>
+                <div class="surah_name">Surah Al-Infitar</div>
+                <div class="surah_share" onclick="share('082')"><i class='bx bx-share-alt'></i></div>
+                <div class="surah_download" onclick="download('082')"><i class='bx bx-cloud-download'></i></div>
+            </div>
+            <div class="surah_card">
+                <div class="surah_card_play" ><i class='bx bx-play'></i></div>
+                <div class="surah_number">083</div>
+                <div class="surah_name">Surah Al-Mutaffifin</div>
+                <div class="surah_share" onclick="share('083')"><i class='bx bx-share-alt'></i></div>
+                <div class="surah_download" onclick="download('083')"><i class='bx bx-cloud-download'></i></div>
+            </div>
+            <div class="surah_card">
+                <div class="surah_card_play" ><i class='bx bx-play'></i></div>
+                <div class="surah_number">084</div>
+                <div class="surah_name">Surah Al-Inshiqaq</div>
+                <div class="surah_share" onclick="share('084')"><i class='bx bx-share-alt'></i></div>
+                <div class="surah_download" onclick="download('084')"><i class='bx bx-cloud-download'></i></div>
+            </div>
+            <div class="surah_card">
+                <div class="surah_card_play" ><i class='bx bx-play'></i></div>
+                <div class="surah_number">085</div>
+                <div class="surah_name">Surah Al-Buruj</div>
+                <div class="surah_share" onclick="share('085')"><i class='bx bx-share-alt'></i></div>
+                <div class="surah_download" onclick="download('005')"><i class='bx bx-cloud-download'></i></div>
+            </div>
+            <div class="surah_card">
+                <div class="surah_card_play" ><i class='bx bx-play'></i></div>
+                <div class="surah_number">086</div>
+                <div class="surah_name">Surah At-Tariq</div>
+                <div class="surah_share" onclick="share('086')"><i class='bx bx-share-alt'></i></div>
+                <div class="surah_download" onclick="download('086')"><i class='bx bx-cloud-download'></i></div>
+            </div>
+            <div class="surah_card">
+                <div class="surah_card_play" ><i class='bx bx-play'></i></div>
+                <div class="surah_number">087</div>
+                <div class="surah_name">Surah Al-A'la</div>
+                <div class="surah_share" onclick="share('087')"><i class='bx bx-share-alt'></i></div>
+                <div class="surah_download" onclick="download('087')"><i class='bx bx-cloud-download'></i></div>
+            </div>
+            <div class="surah_card">
+                <div class="surah_card_play" ><i class='bx bx-play'></i></div>
+                <div class="surah_number">088</div>
+                <div class="surah_name">Surah Al-Ghashiyah</div>
+                <div class="surah_share" onclick="share('088')"><i class='bx bx-share-alt'></i></div>
+                <div class="surah_download" onclick="download('088')"><i class='bx bx-cloud-download'></i></div>
+            </div>
+            <div class="surah_card">
+                <div class="surah_card_play" ><i class='bx bx-play'></i></div>
+                <div class="surah_number">089</div>
+                <div class="surah_name">Surah Al-Fajr</div>
+                <div class="surah_share" onclick="share('089')"><i class='bx bx-share-alt'></i></div>
+                <div class="surah_download" onclick="download('089')"><i class='bx bx-cloud-download'></i></div>
+            </div>
+            <div class="surah_card">
+                <div class="surah_card_play" ><i class='bx bx-play'></i></div>
+                <div class="surah_number">090</div>
+                <div class="surah_name">Surah Al-Balad</div>
+                <div class="surah_share" onclick="share('090')"><i class='bx bx-share-alt'></i></div>
+                <div class="surah_download" onclick="download('090')"><i class='bx bx-cloud-download'></i></div>
+            </div>
+            <div class="surah_card">
+                <div class="surah_card_play" ><i class='bx bx-play'></i></div>
+                <div class="surah_number">091</div>
+                <div class="surah_name">Surah Ash-Shams</div>
+                <div class="surah_share" onclick="share('091')"><i class='bx bx-share-alt'></i></div>
+                <div class="surah_download" onclick="download('091')"><i class='bx bx-cloud-download'></i></div>
+            </div>
+            <div class="surah_card">
+                <div class="surah_card_play" ><i class='bx bx-play'></i></div>
+                <div class="surah_number">092</div>
+                <div class="surah_name">Surah Al-Layl</div>
+                <div class="surah_share" onclick="share('092')"><i class='bx bx-share-alt'></i></div>
+                <div class="surah_download" onclick="download('092')"><i class='bx bx-cloud-download'></i></div>
+            </div>
+            <div class="surah_card">
+                <div class="surah_card_play" ><i class='bx bx-play'></i></div>
+                <div class="surah_number">093</div>
+                <div class="surah_name">Surah Ad-Duhaa</div>
+                <div class="surah_share" onclick="share('093')"><i class='bx bx-share-alt'></i></div>
+                <div class="surah_download" onclick="download('093')"><i class='bx bx-cloud-download'></i></div>
+            </div>
+            <div class="surah_card">
+                <div class="surah_card_play" ><i class='bx bx-play'></i></div>
+                <div class="surah_number">094</div>
+                <div class="surah_name">Surah Ash-Sharh</div>
+                <div class="surah_share" onclick="share('094')"><i class='bx bx-share-alt'></i></div>
+                <div class="surah_download" onclick="download('094')"><i class='bx bx-cloud-download'></i></div>
+            </div>
+            <div class="surah_card">
+                <div class="surah_card_play" ><i class='bx bx-play'></i></div>
+                <div class="surah_number">095</div>
+                <div class="surah_name">Surah At-Tin</div>
+                <div class="surah_share" onclick="share('095')"><i class='bx bx-share-alt'></i></div>
+                <div class="surah_download" onclick="download('095')"><i class='bx bx-cloud-download'></i></div>
+            </div>
+            <div class="surah_card">
+                <div class="surah_card_play" ><i class='bx bx-play'></i></div>
+                <div class="surah_number">096</div>
+                <div class="surah_name">Surah Al-'Alaq</div>
+                <div class="surah_share" onclick="share('096')"><i class='bx bx-share-alt'></i></div>
+                <div class="surah_download" onclick="download('096')"><i class='bx bx-cloud-download'></i></div>
+            </div>
+            <div class="surah_card">
+                <div class="surah_card_play" ><i class='bx bx-play'></i></div>
+                <div class="surah_number">097</div>
+                <div class="surah_name">Surah Al-Qadr</div>
+                <div class="surah_share" onclick="share('097')"><i class='bx bx-share-alt'></i></div>
+                <div class="surah_download" onclick="download('097')"><i class='bx bx-cloud-download'></i></div>
+            </div>
+            <div class="surah_card">
+                <div class="surah_card_play" ><i class='bx bx-play'></i></div>
+                <div class="surah_number">098</div>
+                <div class="surah_name">Surah Al-Bayyinah</div>
+                <div class="surah_share" onclick="share('098')"><i class='bx bx-share-alt'></i></div>
+                <div class="surah_download" onclick="download('098')"><i class='bx bx-cloud-download'></i></div>
+            </div>
+            <div class="surah_card">
+                <div class="surah_card_play" ><i class='bx bx-play'></i></div>
+                <div class="surah_number">099</div>
+                <div class="surah_name">Surah Az-Zalzalah</div>
+                <div class="surah_share" onclick="share('099')"><i class='bx bx-share-alt'></i></div>
+                <div class="surah_download" onclick="download('099')"><i class='bx bx-cloud-download'></i></div>
+            </div>
+            <div class="surah_card">
+                <div class="surah_card_play" ><i class='bx bx-play'></i></div>
+                <div class="surah_number">100</div>
+                <div class="surah_name">Surah Al-'Adiyat</div>
+                <div class="surah_share" onclick="share('100')"><i class='bx bx-share-alt'></i></div>
+                <div class="surah_download" onclick="download('100')"><i class='bx bx-cloud-download'></i></div>
+            </div>
+            <div class="surah_card">
+                <div class="surah_card_play" ><i class='bx bx-play'></i></div>
+                <div class="surah_number">101</div>
+                <div class="surah_name">Surah Al-Qari'ah</div>
+                <div class="surah_share" onclick="share('101')"><i class='bx bx-share-alt'></i></div>
+                <div class="surah_download" onclick="download('101')"><i class='bx bx-cloud-download'></i></div>
+            </div>
+            <div class="surah_card">
+                <div class="surah_card_play" ><i class='bx bx-play'></i></div>
+                <div class="surah_number">102</div>
+                <div class="surah_name">Surah At-Takathur</div>
+                <div class="surah_share" onclick="share('102')"><i class='bx bx-share-alt'></i></div>
+                <div class="surah_download" onclick="download('102')"><i class='bx bx-cloud-download'></i></div>
+            </div>
+            <div class="surah_card">
+                <div class="surah_card_play" ><i class='bx bx-play'></i></div>
+                <div class="surah_number">103</div>
+                <div class="surah_name">Surah Al-'Asr</div>
+                <div class="surah_share" onclick="share('103')"><i class='bx bx-share-alt'></i></div>
+                <div class="surah_download" onclick="download('103')"><i class='bx bx-cloud-download'></i></div>
+            </div>
+            <div class="surah_card">
+                <div class="surah_card_play" ><i class='bx bx-play'></i></div>
+                <div class="surah_number">104</div>
+                <div class="surah_name">Surah Al-Humazah</div>
+                <div class="surah_share" onclick="share('104')"><i class='bx bx-share-alt'></i></div>
+                <div class="surah_download" onclick="download('104')"><i class='bx bx-cloud-download'></i></div>
+            </div>
+            <div class="surah_card">
+                <div class="surah_card_play" ><i class='bx bx-play'></i></div>
+                <div class="surah_number">105</div>
+                <div class="surah_name">Surah Al-Fil</div>
+                <div class="surah_share" onclick="share('105')"><i class='bx bx-share-alt'></i></div>
+                <div class="surah_download" onclick="download('105')"><i class='bx bx-cloud-download'></i></div>
+            </div>
+            <div class="surah_card">
+                <div class="surah_card_play" ><i class='bx bx-play'></i></div>
+                <div class="surah_number">106</div>
+                <div class="surah_name">Surah Quraysh</div>
+                <div class="surah_share" onclick="share('106')"><i class='bx bx-share-alt'></i></div>
+                <div class="surah_download" onclick="download('106')"><i class='bx bx-cloud-download'></i></div>
+            </div>
+            <div class="surah_card">
+                <div class="surah_card_play" ><i class='bx bx-play'></i></div>
+                <div class="surah_number">107</div>
+                <div class="surah_name">Surah Al-Ma'un</div>
+                <div class="surah_share" onclick="share('107')"><i class='bx bx-share-alt'></i></div>
+                <div class="surah_download" onclick="download('107')"><i class='bx bx-cloud-download'></i></div>
+            </div>
+            <div class="surah_card">
+                <div class="surah_card_play" ><i class='bx bx-play'></i></div>
+                <div class="surah_number">108</div>
+                <div class="surah_name">Surah Al-Kawthar</div>
+                <div class="surah_share" onclick="share('108')"><i class='bx bx-share-alt'></i></div>
+                <div class="surah_download" onclick="download('108')"><i class='bx bx-cloud-download'></i></div>
+            </div>
+            <div class="surah_card">
+                <div class="surah_card_play" ><i class='bx bx-play'></i></div>
+                <div class="surah_number">109</div>
+                <div class="surah_name">Surah Al-Kafirun</div>
+                <div class="surah_share" onclick="share('109')"><i class='bx bx-share-alt'></i></div>
+                <div class="surah_download" onclick="download('109')"><i class='bx bx-cloud-download'></i></div>
+            </div>
+            <div class="surah_card">
+                <div class="surah_card_play" ><i class='bx bx-play'></i></div>
+                <div class="surah_number">110</div>
+                <div class="surah_name">Surah An-Nasr</div>
+                <div class="surah_share" onclick="share('110')"><i class='bx bx-share-alt'></i></div>
+                <div class="surah_download" onclick="download('110')"><i class='bx bx-cloud-download'></i></div>
+            </div>
+            <div class="surah_card">
+                <div class="surah_card_play" ><i class='bx bx-play'></i></div>
+                <div class="surah_number">111</div>
+                <div class="surah_name">Surah Al-Masad</div>
+                <div class="surah_share" onclick="share('111')"><i class='bx bx-share-alt'></i></div>
+                <div class="surah_download" onclick="download('111')"><i class='bx bx-cloud-download'></i></div>
+            </div>
+            <div class="surah_card">
+                <div class="surah_card_play" ><i class='bx bx-play'></i></div>
+                <div class="surah_number">112</div>
+                <div class="surah_name">Surah Al-Ikhlas</div>
+                <div class="surah_share" onclick="share('112')"><i class='bx bx-share-alt'></i></div>
+                <div class="surah_download" onclick="download('112')"><i class='bx bx-cloud-download'></i></div>
+            </div>
+            <div class="surah_card">
+                <div class="surah_card_play" ><i class='bx bx-play'></i></div>
+                <div class="surah_number">113</div>
+                <div class="surah_name">Surah Al-Falaq</div>
+                <div class="surah_share" onclick="share('113')"><i class='bx bx-share-alt'></i></div>
+                <div class="surah_download" onclick="download('113')"><i class='bx bx-cloud-download'></i></div>
+            </div>
+            <div class="surah_card">
+                <div class="surah_card_play" ><i class='bx bx-play'></i></div>
+                <div class="surah_number">114</div>
+                <div class="surah_name">Surah An-Nas</div>
+                <div class="surah_share" onclick="share('114')"><i class='bx bx-share-alt'></i></div>
+                <div class="surah_download" onclick="download('114')"><i class='bx bx-cloud-download'></i></div>
+            </div>
+
+        </div>
+    </div>
+    <div class="con3">
+        <div style="max-width:2500px; margin:0 auto">
+            <div class="hud">
+                <div class="hud_top">
+                    <div class="hud_top_left">
+                        <div class="hud_shuffle" onclick="hud_shuffle()"><i class='bx bx-shuffle' ></i></div>
+                        <div class="hud_loop" onclick="hud_loop()"><i class='bx bx-repeat'></i></div>
+                    </div>
+                    <div class="hud_top_center">
+                        <div class="hud_rewind" onclick="hud_rewind()"><i class='bx bx-fast-forward bx-rotate-180' ></i></div>
+                        <div class="hud_play" onclick='hud_play(this, "manual")'><i class='bx bx-play'></i></div>
+                        <div class="hud_fast_forward_right" onclick="hud_fast_forward_right()"><i class='bx bx-fast-forward' ></i></div>
+                    </div>
+                    <div class="hud_top_right">
+                        <div class="hud_mute" onclick="hud_mute()"><i class='bx bx-volume-full' ></i></div>
+                    </div>
+                </div>
+                <div class="hud_bottom">
+                    <div class="hud_played_time">00:00</div>
+                    <div class="progress_track">
+                        <div class="progress_bar"></div>
+                    </div>
+                    <div class="hud_total_time">00:00</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="assets/js/main.js"></script>
+</html>
